@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🚀 HP MAXX BANDUNG | Jual HP Bekas Harga Tertinggi!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --neon-blue: #00F0FF;
+            --neon-pink: #FF00F5;
+            --neon-green: #00FF85;
+            --dark-space: #0A0A0F;
+            --light: rgba(255,255,255,0.9);
+            --gradient: linear-gradient(135deg, var(--neon-pink) 0%, var(--neon-blue) 100%);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-space);
+            color: var(--light);
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        .cyber {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* === HYPNOTIC LOADER === */
+        .hypno-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark-space);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.6s;
+        }
+
+        .hypno-spinner {
+            width: 80px;
+            height: 80px;
+            border: 8px solid rgba(0,240,255,0.1);
+            border-top-color: var(--neon-pink);
+            border-radius: 50%;
+            animation: spin 1.5s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* === MAIN STRUCTURE === */
+        .container {
+            max-width: 100%;
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 60px 0;
+            position: relative;
+        }
+
+        /* === CYBER HERO === */
+        .cyber-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cyber-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,0,245,0.05) 0%, transparent 50%);
+            animation: pulse 8s infinite alternate;
+            z-index: -1;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.2); opacity: 0.1; }
+            100% { transform: scale(1); opacity: 0.3; }
+        }
+
+        .hero-content {
+            text-align: center;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 7vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 4vw, 1.4rem);
+            color: rgba(255,255,255,0.9);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        /* === CYBER CARD === */
+        .cyber-card {
+            background: rgba(15,15,20,0.6);
+            border: 1px solid rgba(0,240,255,0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .cyber-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255,0,245,0.2);
+            border-color: var(--neon-pink);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--neon-blue);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--neon-green);
+        }
+
+        /* === CYBER FORM === */
+        .cyber-form {
+            background: rgba(15,15,20,0.8);
+            border: 1px solid var(--neon-pink);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 30px rgba(255,0,245,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cyber-form::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255,255,255,0) 0%,
+                rgba(255,0,245,0.05) 45%,
+                rgba(0,240,255,0.05) 50%,
+                rgba(255,0,245,0.05) 55%,
+                rgba(255,255,255,0) 100%
+            );
+            transform: rotate(30deg);
+            animation: shine 5s infinite;
+            z-index: -1;
+        }
+
+        .form-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--neon-green);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--neon-blue);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(0,240,255,0.3);
+            border-radius: 10px;
+            color: white;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--neon-pink);
+            box-shadow: 0 0 10px rgba(255,0,245,0.3);
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300F0FF'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 20px;
+        }
+
+        /* === CYBER BUTTON === */
+        .cyber-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 35px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(255,0,245,0.3);
+            margin: 1.5rem 0;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        .cyber-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(0,240,255,0.5);
+        }
+
+        .cyber-button:active {
+            transform: translateY(2px);
+        }
+
+        .cyber-button i {
+            margin-right: 10px;
+        }
+
+        /* === TESTIMONIALS === */
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: rgba(15,15,20,0.6);
+            border: 1px solid rgba(0,240,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .testimonial-text::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 3rem;
+            color: var(--neon-green);
+            opacity: 0.3;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--neon-blue);
+        }
+
+        .testimonial-location {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            background: rgba(255,0,245,0.05);
+            border-top: 1px solid rgba(255,0,245,0.2);
+            border-bottom: 1px solid rgba(255,0,245,0.2);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: clamp(1.5rem, 5vw, 2rem);
+            margin-bottom: 20px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .cta-subtitle {
+            font-size: clamp(1rem, 3.5vw, 1.2rem);
+            color: rgba(255,255,255,0.8);
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        /* === FOOTER === */
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 0;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem !important;
+            }
+            
+            .cyber-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- === HYPNOTIC LOADER === -->
+    <div class="hypno-loader" id="loader">
+        <div class="hypno-spinner"></div>
+        <h2 style="color: var(--neon-blue); margin-top: 20px;">HP MAXX BANDUNG</h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Loading sistem harga premium...</p>
+    </div>
+
+    <!-- === CYBER HERO === -->
+    <section class="cyber-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">HP BEKAS ANDA BERHARGA LEBIH TINGGI!</h1>
+                <p class="hero-subtitle">
+                    💎 <strong>Khusus warga Bandung!</strong> Dapatkan penawaran harga terbaik tanpa harus nego ribet.
+                </p>
+                
+                <div class="cyber-card">
+                    <div class="card-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="card-title">KENAPA LEBIH TINGGI?</h3>
+                    <p>Kami menghubungkan langsung dengan <strong>network dan pembeli serius</strong> yang mau bayar premium untuk HP bekas berkualitas.</p>
+                </div>
+                
+                <button onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'})" 
+                        class="cyber-button">
+                    <i class="fas fa-bolt"></i> CEK HARGA SEKARANG
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FORM SECTION === -->
+    <section id="form-section">
+        <div class="container">
+            <div class="cyber-form">
+                <h3 class="form-title">📱 DATA HP ANDA</h3>
+                <p style="text-align: center; margin-bottom: 20px; color: rgba(255,255,255,0.7);">
+                    Isi form berikut untuk mendapatkan estimasi harga instan
+                </p>
+                
+                <form id="hpForm">
+                    <div class="form-group">
+                        <label for="brand"><i class="fas fa-mobile-alt"></i> Merek HP</label>
+                        <select id="brand" class="form-control" required>
+                            <option value="">Pilih Merek</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="iPhone">iPhone</option>
+                            <option value="Oppo">Oppo</option>
+                            <option value="Vivo">Vivo</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Realme">Realme</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="model"><i class="fas fa-tag"></i> Model HP</label>
+                        <input type="text" id="model" class="form-control" placeholder="Contoh: Galaxy S21 FE" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="year"><i class="fas fa-calendar-alt"></i> Tahun Pembelian</label>
+                        <select id="year" class="form-control" required>
+                            <option value="">Pilih Tahun</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ram"><i class="fas fa-memory"></i> RAM (GB)</label>
+                        <select id="ram" class="form-control" required>
+                            <option value="">Pilih RAM</option>
+                            <option value="4">4 GB</option>
+                            <option value="6">6 GB</option>
+                            <option value="8">8 GB</option>
+                            <option value="12">12 GB</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="storage"><i class="fas fa-hdd"></i> Penyimpanan (GB)</label>
+                        <select id="storage" class="form-control" required>
+                            <option value="">Pilih Penyimpanan</option>
+                            <option value="64">64 GB</option>
+                            <option value="128">128 GB</option>
+                            <option value="256">256 GB</option>
+                            <option value="512">512 GB</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="condition"><i class="fas fa-clipboard-check"></i> Kondisi HP</label>
+                        <select id="condition" class="form-control" required>
+                            <option value="">Pilih Kondisi</option>
+                            <option value="Mulus">Mulus (Like New)</option>
+                            <option value="Bekas">Bekas (Normal)</option>
+                            <option value="Cacat">Ada Cacat/Retak</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="cyber-button">
+                        <i class="fas fa-paper-plane"></i> DAPATKAN HARGA SEKARANG
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- === TESTIMONIALS === -->
+    <section>
+        <div class="container">
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        Samsung S21 FE saya ditawar 5,5jt di sini, padahal di toko cuma 4,7jt. Transferannya langsung cair!
+                    </p>
+                    <div class="testimonial-author">Budi Santoso</div>
+                    <div class="testimonial-location">Bandung Timur</div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        iPhone 11 bekas service masih bisa laku 3,8jt. Ga nyangka bisa dapet harga segini!
+                    </p>
+                    <div class="testimonial-author">Dian Permata</div>
+                    <div class="testimonial-location">Bandung Selatan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FINAL CTA === -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">JANGAN TERBURU-BURU JUAL KE TOKO!</h2>
+            <p class="cta-subtitle">
+                💡 Cukup 1 menit isi form, Anda bisa dapat <strong>Rp300rb - 500rb lebih tinggi</strong> daripada harga toko.
+            </p>
+            
+            <button onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'})" 
+                    class="cyber-button" style="max-width: 400px; margin: 0 auto;">
+                <i class="fas fa-bolt"></i> CEK HARGA SEKARANG
+            </button>
+        </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 HP MAXX BANDUNG | Sistem Penghubung Pembeli Premium</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">
+                Khusus untuk warga Bandung | WA: 0897-7771-080
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // === INITIALIZATION ===
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide loader
+            setTimeout(function() {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('loader').style.display = 'none';
+                }, 600);
+            }, 2000);
+            
+            // Form submission
+            document.getElementById('hpForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get all values
+                const brand = document.getElementById('brand').value;
+                const model = document.getElementById('model').value;
+                const year = document.getElementById('year').value;
+                const ram = document.getElementById('ram').value;
+                const storage = document.getElementById('storage').value;
+                const condition = document.getElementById('condition').value;
+                
+                // Format WhatsApp message
+                const whatsappMessage = `*📱 CEK HARGA HP BEKAS - HP MAXX BANDUNG*\n\n` +
+                                      `Merek: *${brand}*\n` +
+                                      `Model: *${model}*\n` +
+                                      `Tahun: *${year}*\n` +
+                                      `RAM: *${ram} GB*\n` +
+                                      `Penyimpanan: *${storage} GB*\n` +
+                                      `Kondisi: *${condition}*\n\n` +
+                                      `Saya ingin tahu harga HP saya via HP MAXX Bandung`;
+                
+                // Open WhatsApp
+                window.open(`https://wa.me/628977771080?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+                
+                // Reset form
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
