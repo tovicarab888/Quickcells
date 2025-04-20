@@ -530,20 +530,92 @@
         </div>
     </section>
 
-    <!-- === FINAL CTA === -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="cta-title">JANGAN TERBURU-BURU JUAL KE TOKO!</h2>
-            <p class="cta-subtitle">
-                💡 Cukup 1 menit isi form, kamu bisa dapat harga lebih tinggi tanpa drama jual beli.
-            </p>
-            
-            <button onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'})" 
-                    class="cyber-button" style="max-width: 400px; margin: 0 auto;">
-                <i class="fas fa-bolt"></i> CEK HARGA SEKARANG
-            </button>
+<!-- === FAQ SECTION === -->
+<section class="faq-section" style="background: rgba(255,0,245,0.03); border-top: 1px solid rgba(255,0,245,0.1); border-bottom: 1px solid rgba(255,0,245,0.1); padding: 60px 0;">
+    <div class="container">
+        <h2 class="cta-title" style="margin-bottom: 40px;">PERTANYAAN YANG SERING DIAJUKAN</h2>
+        
+        <!-- FAQ 1 -->
+        <div class="cyber-card" style="max-width: 800px; margin: 0 auto 15px; cursor: pointer;" onclick="this.classList.toggle('active')">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+                <h3 style="color: var(--neon-blue); font-size: 1.2rem; margin: 0;">Q: Ini sistem beli HP atau titip jual sih?</h3>
+                <i class="fas fa-chevron-down" style="color: var(--neon-pink); transition: var(--transition);"></i>
+            </div>
+            <div style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.3s ease; padding: 0 20px;">
+                <p style="color: rgba(255,255,255,0.9); line-height: 1.7; padding-bottom: 20px;">
+                    <span style="color: var(--neon-green); font-weight: 600;">A:</span> Gini, kita gak beli putus kayak toko yang langsung banting harga. Tapi kita bantu pasarkan ke jalur yang bisa kasih harga lebih tinggi. Intinya: kamu tetap dapet hasil, tapi lewat cara yang lebih cerdas.
+                </p>
+            </div>
         </div>
-    </section>
+        
+        <!-- FAQ 2 -->
+        <div class="cyber-card" style="max-width: 800px; margin: 0 auto 15px; cursor: pointer;" onclick="this.classList.toggle('active')">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+                <h3 style="color: var(--neon-blue); font-size: 1.2rem; margin: 0;">Q: Kalau HP saya mulus dan lengkap, dapet harga spesial?</h3>
+                <i class="fas fa-chevron-down" style="color: var(--neon-pink); transition: var(--transition);"></i>
+            </div>
+            <div style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.3s ease; padding: 0 20px;">
+                <p style="color: rgba(255,255,255,0.9); line-height: 1.7; padding-bottom: 20px;">
+                    <span style="color: var(--neon-green); font-weight: 600;">A:</span> Iya. Unit fullset, kondisi masih like new, apalagi batere sehat — itu kita angkat ke jalur cepat. Semakin bagus kondisi, semakin tinggi estimasi yang bisa kita dorong ke buyer.
+                </p>
+            </div>
+        </div>
+        
+        <!-- FAQ 3 -->
+        <div class="cyber-card" style="max-width: 800px; margin: 0 auto 15px; cursor: pointer;" onclick="this.classList.toggle('active')">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+                <h3 style="color: var(--neon-blue); font-size: 1.2rem; margin: 0;">Q: Saya harus COD sama pembeli?</h3>
+                <i class="fas fa-chevron-down" style="color: var(--neon-pink); transition: var(--transition);"></i>
+            </div>
+            <div style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.3s ease; padding: 0 20px;">
+                <p style="color: rgba(255,255,255,0.9); line-height: 1.7; padding-bottom: 20px;">
+                    <span style="color: var(--neon-green); font-weight: 600;">A:</span> Enggak. Kamu gak perlu ketemu siapa-siapa. Semua komunikasi, closing, dan pengiriman di-handle sama tim. Kamu cukup respon kami lewat WA aja.
+                </p>
+            </div>
+        </div>
+        
+        <!-- FAQ 4 -->
+        <div class="cyber-card" style="max-width: 800px; margin: 0 auto 15px; cursor: pointer;" onclick="this.classList.toggle('active')">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+                <h3 style="color: var(--neon-blue); font-size: 1.2rem; margin: 0;">Q: Saya takut ditipu atau HP saya dibawa kabur...</h3>
+                <i class="fas fa-chevron-down" style="color: var(--neon-pink); transition: var(--transition);"></i>
+            </div>
+            <div style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.3s ease; padding: 0 20px;">
+                <p style="color: rgba(255,255,255,0.9); line-height: 1.7; padding-bottom: 20px;">
+                    <span style="color: var(--neon-green); font-weight: 600;">A:</span> Wajar. Tapi sistem ini justru dibuat karena banyak yang trauma jualan sendiri. Kami kerja pakai sistem, bukan omongan. Gak cocok, ya gak lanjut — tanpa resiko di kamu.
+                </p>
+            </div>
+        </div>
+        
+        <!-- FAQ 5 -->
+        <div class="cyber-card" style="max-width: 800px; margin: 0 auto; cursor: pointer;" onclick="this.classList.toggle('active')">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+                <h3 style="color: var(--neon-blue); font-size: 1.2rem; margin: 0;">Q: Kalau HP saya gak cocok buat sistem ini?</h3>
+                <i class="fas fa-chevron-down" style="color: var(--neon-pink); transition: var(--transition);"></i>
+            </div>
+            <div style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.3s ease; padding: 0 20px;">
+                <p style="color: rgba(255,255,255,0.9); line-height: 1.7; padding-bottom: 20px;">
+                    <span style="color: var(--neon-green); font-weight: 600;">A:</span> Kita filter unit. Gak semua kita angkut. Tapi kalau unit kamu layak, kamu akan langsung ditarik ke sistem. Kalau belum cocok, kita akan bilang dari awal. Transparan dan adil.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === FINAL CTA === -->
+<section class="cta-section">
+    <div class="container">
+        <h2 class="cta-title">JANGAN TERBURU-BURU JUAL KE TOKO!</h2>
+        <p class="cta-subtitle">
+            💡 Cukup 1 menit isi form, kamu bisa dapat harga lebih tinggi tanpa drama jual beli.
+        </p>
+        
+        <button onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'})" 
+                class="cyber-button" style="max-width: 400px; margin: 0 auto;">
+            <i class="fas fa-bolt"></i> CEK HARGA SEKARANG
+        </button>
+    </div>
+</section>
 
     <!-- === FOOTER === -->
     <footer class="footer">
@@ -595,6 +667,23 @@
                 this.reset();
             });
         });
+            // Fungsi toggle FAQ
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.cyber-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const answer = this.querySelector('div:last-child');
+                const icon = this.querySelector('i');
+                
+                if (answer.style.maxHeight === '0px' || !answer.style.maxHeight) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    });
     </script>
 </body>
 </html>
